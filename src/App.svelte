@@ -13,7 +13,7 @@ import modelOptions from './model-options'
 import CallFlowPalette from "./CallFlowPalette.svelte";
 import CallflowInspector from "./Inspector.svelte";
 
-let { url } = $props<{ url?: string }>();
+let url = "/callflow.json"
 
 </script>
 
