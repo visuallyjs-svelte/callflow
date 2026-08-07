@@ -1,4 +1,4 @@
-import {BackgroundPlugin, GeneratedGridBackground, AnchorLocations, CONNECTOR_TYPE_ORTHOGONAL} from "@visuallyjs/browser-ui";
+import {BackgroundPlugin, GeneratedGridBackground, AnchorLocations, CONNECTOR_TYPE_ORTHOGONAL, PLUGIN_TYPE_LINE_CROSSINGS} from "@visuallyjs/browser-ui";
 import {SvelteSurfaceRenderOptions} from "@visuallyjs/browser-ui-svelte/definitions";
 
 const renderOptions:SvelteSurfaceRenderOptions = {
@@ -22,12 +22,7 @@ const renderOptions:SvelteSurfaceRenderOptions = {
         }
     },
     plugins:[
-        {
-            type:BackgroundPlugin.type,
-            options:{
-                type:GeneratedGridBackground.type
-            }
-        }
+        PLUGIN_TYPE_LINE_CROSSINGS
     ]
 }
 

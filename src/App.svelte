@@ -3,7 +3,8 @@ import {
     SurfaceProvider,
     SurfaceComponent,
     ControlsComponent,
-    MiniviewComponent
+    MiniviewComponent,
+    GridBackgroundComponent
 } from "@visuallyjs/browser-ui-svelte"
 
 import renderOptions from './render-options'
@@ -27,6 +28,7 @@ let url = "/callflow.json"
 
             <ControlsComponent/>
             <MiniviewComponent/>
+			<GridBackgroundComponent/>
         </SurfaceComponent>
         <div class="vjs-callflow-rhs">
             <CallFlowPalette/>
