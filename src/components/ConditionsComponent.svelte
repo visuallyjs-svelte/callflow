@@ -46,7 +46,7 @@ function addCondition() {
 <div class="vjs-callflow-node" data-vjs-target="true">
   <div class="vjs-callflow-delete" onclick={removeNode}></div>
   <div class="vjs-callflow-label">
-    <div class="vjs-callflow-node-icon" />
+    <div class="vjs-callflow-node-icon"></div>
     Conditions
     <div class="vjs-callflow-add-condition" onclick={addCondition}>+</div>
   </div>
@@ -55,7 +55,7 @@ function addCondition() {
       <span onclick={() => editCondition(condition.id)} title={condition.value}>{ condition.value }</span>
       <div class="vjs-callflow-connect" data-vjs-source="true" />
       {#if condition.value !== 'Else'}
-        <div class="vjs-edge-delete" onclick={() => removeCondition(condition.id)} />
+        <div class="vjs-edge-delete" onclick={() => removeCondition(condition.id)}></div>
       {/if}
     </div>
   {/each}
